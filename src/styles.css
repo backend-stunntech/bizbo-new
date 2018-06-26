@@ -324,7 +324,7 @@ img.img-responsive.logo.d-inline-block.align-top{
 
 nav{
   width: 100vw;
-  background-image: url('./assets/images/bizbo-banner-home.jpg') !important;
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -422,7 +422,7 @@ a.header-nav-links.active:hover{
 /******************************************************************************/
 
 body{
-  padding-top: 20px;
+  padding-top:0px;
 }
 
 .bizbo-home-background{

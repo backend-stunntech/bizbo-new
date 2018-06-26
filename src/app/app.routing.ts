@@ -6,7 +6,7 @@ import {ServiceComponent} from './pages/service/service.component';
 import {HomeBusinessInfoComponent} from './user/home-business-info/home-business-info.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
+  { path: '',   redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'service' , component: ServiceComponent },
