@@ -10,7 +10,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { HomeBusinessInfoComponent } from './user/home-business-info/home-business-info.component';
-import { HomeThankYouComponent } from './pages/home-thank-you/home-thank-you.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +18,10 @@ import { HomeThankYouComponent } from './pages/home-thank-you/home-thank-you.com
     AboutComponent,
     ServiceComponent,
     HeaderComponent,
-    HomeBusinessInfoComponent,
-    HomeThankYouComponent
+    HomeBusinessInfoComponent
   ],
   imports: [
-    BrowserModule, ModuleRouting, ModalModule
+    BrowserModule, ModuleRouting, ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
