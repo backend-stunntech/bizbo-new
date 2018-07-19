@@ -1,0 +1,139 @@
+<div class="bizbo-home-background">
+  
+  <section class="home-page">
+    <div class="flex-total-center">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="row">
+                <div class="business-info card-box col-lg-12">
+
+                  <div class="heading margin-bottom-30">
+                    <h2 class="card-heading">Business Information</h2>
+                  </div>
+                  <div class="business-info-form">
+                    <form class="business-info-details" [formGroup]="reportForm" (ngSubmit)="submitReport()">
+
+                      <div class="row margin-bottom-10">
+                        <div class="form-left col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                          <div class="form-group margin-bottom-30">
+                            <input type="text" class="form-control form-text bizbo-textfield" formControlName="businessLocation" data-toggle="tooltip" data-placement="top" title="Company Location" name="businessLocation" id="" placeholder="Business Location">
+                          </div>
+                          <div class="form-group margin-bottom-30">
+                            <select class="form-control form-text bizbo-textfield" formControlName="businessType" data-toggle="tooltip" data-placement="top" title="Business Type" name="businessType" id="">
+                              <option class="dropdown-placeholder" value="" disabled selected>Area of Business</option>
+                              <option value="gas-station">Gas stations</option>
+                              <option value="e-commerce">E-commerce (online)</option>
+                              <option value="beauty">Beauty services</option>
+                              <option value="realestate">Real estate</option>
+                              <option value="electronics">Electronics and appliance store</option>
+                              <option value="tourism">Tourism</option>
+                              <option value="restaurant">Restaurant</option>
+                              <option value="boutique">Fashion Boutique</option>
+                              <option value="events">Event Management</option>
+                              <option value="webdesign">Web Design/Development</option>
+                              <option value="catering">Catering </option>
+                              <option value="housecleaning">House Cleaning Services</option>
+                              <option value="bakery">Bakery</option>
+                              <option value="carwash">Car wash/Auto-detailing</option>
+                              
+                            </select>
+                          </div>
+                          <div class="form-group margin-bottom-30">
+                            <select class="form-control form-text bizbo-textfield" data-toggle="tooltip" formControlName="experience" data-placement="top" title="Niche of Business" name="experience" id="">
+                              <option class="dropdown-placeholder" value="" disabled selected>Experience in the field</option>
+                              <option value="less than 1 year">Less Than 1 year</option>
+                              <option value="1-2 years">1 - 2 years</option>
+                              <option value="2-5 years">2 - 5 years</option>
+                              <option value="5-10 years">5 - 10 years</option>
+                              <option value="greater than 10 years">Greater than 10 years</option>
+                            </select>
+                          </div>
+                          <div class="form-group margin-bottom-30">
+                            <select class="form-control form-text bizbo-textfield" data-toggle="tooltip" formControlName="businessEntityType" data-placement="top" title="Niche of Business" name="businessEntityType" id="">
+                              <option class="dropdown-placeholder" value="" disabled selected>Business Entity Type</option>
+                              <option value="Corporation">Corporation</option>
+                              <option value="LLC">Limited Liability Company</option>
+                              <option value="Partnership">Limited Partnership</option>
+                              <option value="Sole Proprietorship">Sole Proprietorship</option>
+                            </select>
+                          </div>
+
+                        </div>
+
+                        <div class="form-center col-lg-2 col-md-2 col-sm-2"><div class="form-division "></div></div>
+
+                        <div class="form-right col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                          <div class="form-group margin-bottom-30">
+                            <input type="text" class="form-control form-text bizbo-textfield" formControlName="budget" data-toggle="tooltip" data-placement="top" title="Starting Budget" name="budget" id="" placeholder="Capital in hand">
+                          </div>
+
+                          <div class="form-group margin-bottom-30">
+                            <div class="radio-main-label">
+                              <label class="form-text form-text-default">Do you have partner or a team?</label>
+                            </div>
+                            <div class="radio-button-label">
+                              <label class="radio-text radio-inline"><input formControlName="havePartners" value="Yes" type="radio" name="havePartners">Yes</label>
+                              <label class="radio-text radio-inline"><input formControlName="havePartners" value="No" type="radio" name="havePartners">No</label>
+                            </div>
+                          </div>
+
+                          <div class="form-group margin-bottom-30">
+                            <div class="radio-main-label">
+                              <label class="form-text form-text-default">Is Your business Registered?</label>
+                            </div>
+                            <div class="radio-button-label">
+                              <label class="radio-text radio-inline"><input formControlName="companyRegistered" value="Yes" type="radio" name="companyRegistered">Yes</label>
+                              <label class="radio-text radio-inline"><input formControlName="companyRegistered" value="No" type="radio" name="companyRegistered">No</label>
+                            </div>
+                          </div>
+                          <div class="form-group margin-bottom-30">
+                            <div class="radio-main-label">
+                              <label class="form-text form-text-default">Looking for funding?</label>
+                            </div>
+                            <div class="radio-button-label">
+                              <label class="radio-text radio-inline"><input formControlName="lookingInvestors" value="Yes" type="radio" name="lookingInvestors">Yes</label>
+                              <label class="radio-text radio-inline"><input formControlName="lookingInvestors" value="No" type="radio" name="lookingInvestors">No</label>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                        <div class="row business-info-footer-button-row">
+                          <div class="report-email-field col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <input type="email" class="form-control form-text form-special bizbo-textfield"  formControlName="email" data-placement="top" title="E-mail Address" name="email" id="" placeholder="Your E-mail Address">
+                          </div>
+                          <div class="submit-business-info col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <button type="submit" class="button-normal">GET MY REPORT</button>
+                          </div>
+                        </div>
+
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+  </div>
+  <!--
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  -->
+

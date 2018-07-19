@@ -1,0 +1,121 @@
+<div class="bizbo-service-providers-background">
+
+  <section class="service-providers-page">
+
+    <div class="flex-top-center">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
+
+            <div class="service-providers-list-menu">
+
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div data-toggle="collapse" href="#serviceProvidersCollapse" class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="collapse-list-heading">Service Providers</a>
+                    </h4>
+                  </div>
+                  <div id="serviceProvidersCollapse" class="panel-collapse collapse">
+                    <ul class="list-group" *ngFor="let each of ProvidersCategory">
+                      <li class="list-group-item service-providers-collapse-list" (click)=selectProviderCategory(each)><a class="service-provider-category-name">{{each}}</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          
+          <div class=" col-lg-9 col-md-12 col-sm-12 col-xs-12 ">
+              <div class=" card-box service-providers-display-card">
+
+                  
+                  <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
+
+                      <div class="service-providers-display-grid" *ngFor="let each of providers; let i=index">
+    
+                          <div class="service-provider-profile-item" *ngIf="i<3">
+                            <div class="profile-layout-grid">
+                              <div class="profile-image-section">
+                                <img class="service-provider-profile-image" src="{{each.image}}" alt="profile image">
+                              </div>
+                              <div class="profile-desc-section">
+                                <div class="profile-desc-grid">
+                                  <div class="profile-card-name">
+                                    <h3>{{each.name}}</h3>
+                                  </div>
+                                  <div class="profile-card-place">
+                                    <p>{{each.place}}</p>
+                                  </div>
+                                </div>
+                                <div class="profile-card-connect">
+                                  <a class="link-small" routerlink="#">CONNECT</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                      </div>
+    
+                  </div>
+
+
+                  <div class=" col-lg-1 col-md-12 col-sm-12 col-xs-12 "></div>
+
+
+                  <div class=" col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
+
+                      <div class="service-providers-display-grid" *ngFor="let each of providers ; let i=index">
+    
+                          <div class="service-provider-profile-item" *ngIf="i>=3 && i<6">
+                            <div class="profile-layout-grid">
+                              <div class="profile-image-section">
+                                <img class="service-provider-profile-image" src="{{each.image}}" alt="profile image">
+                              </div>
+                              <div class="profile-desc-section">
+                                <div class="profile-desc-grid">
+                                  <div class="profile-card-name">
+                                    <h3>{{each.name}}</h3>
+                                  </div>
+                                  <div class="profile-card-place">
+                                    <p>{{each.place}}</p>
+                                  </div>
+                                </div>
+                                <div class="profile-card-connect">
+                                  <a class="link-small" routerlink="#">CONNECT</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                      </div>
+    
+                  </div>
+    
+    
+
+
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  </div>
+  
+
+  <script>
+    $(document).ready(function(){
+      var windowWidth = $(window).width();
+      if(windowWidth > 1024) //for iPad & smaller devices
+      $('.panel-collapse').addClass('in')
+      });
+  </script>

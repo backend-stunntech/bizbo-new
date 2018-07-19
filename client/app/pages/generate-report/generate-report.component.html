@@ -1,0 +1,148 @@
+<div class="bizbo-home-background1">
+
+    <div class="container">
+      <div class="row">
+
+        <a routerlink="home">Back Home</a>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+
+              <div class="business-info card-box col-lg-12">
+
+                <div class="heading margin-bottom-30">
+                  <h2 class="card-heading">Business Information</h2>
+                </div>
+                <div class="business-info-form">
+                  <form class="business-info-details" method="post">
+
+                    <div class="row margin-bottom-10">
+                      <div class="form-left col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                        <div class="form-group margin-bottom-30">
+                          <input type="text" class="form-control form-text bizbo-textfield" ng-model="relevance" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Business Relevance">
+                        </div>
+                        <div class="form-group margin-bottom-30">
+                          <input type="text" class="form-control form-text bizbo-textfield" ng-model="team" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Team strength">
+                        </div>
+                        <div class="form-group margin-bottom-30">
+                          <input type="text" class="form-control form-text bizbo-textfield" ng-model="capital" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Capital">
+                        </div>
+
+                      </div>
+
+                      <div class="form-center col-lg-2 col-md-2 col-sm-2"><div class="form-division-admin1"></div></div>
+
+                      <div class="form-right col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                        <div class="form-group margin-bottom-30">
+                          <input type="text" class="form-control form-text bizbo-textfield" ng-model="expertise" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Business Domain Knowledge">
+                        </div>
+                        <div class="form-group margin-bottom-30">
+                          <input type="text" class="form-control form-text bizbo-textfield" ng-model="investment" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Investment">
+                        </div>
+                        <div class="form-group margin-bottom-30">
+                          <input type="text" class="form-control form-text bizbo-textfield" ng-model="competition" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Competition">
+                        </div>
+
+                      </div>
+                      </div>
+                    
+                    </form>
+                  </div>
+
+
+                  <div class="heading margin-bottom-30">
+                      <h2 class="card-heading">Market Trends</h2>
+                    </div>
+                    <div class="business-info-form">
+                      <form class="business-info-details" method="post">
+  
+                        <div class="row margin-bottom-10">
+                          <div class="form-left col-lg-5 col-md-5 col-sm-5 col-xs-12">
+  
+                            <div class="form-group margin-bottom-30">
+                              <input type="text" class="form-control form-text bizbo-textfield" ng-model="marketvalue1" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Market Value1">
+                            </div>
+                            <div class="form-group margin-bottom-30">
+                              <input type="text" class="form-control form-text bizbo-textfield" ng-model="marketvalue3" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Market Value3">
+                            </div>
+                            <div class="form-group margin-bottom-30">
+                                <input type="text" class="form-control form-text bizbo-textfield" ng-model="marketvalue5" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Market Value5">
+                              </div>
+  
+                          </div>
+  
+                          <div class="form-center col-lg-2 col-md-2 col-sm-2"><div class="form-division-admin2"></div></div>
+  
+                          <div class="form-right col-lg-5 col-md-5 col-sm-5 col-xs-12">
+  
+                            <div class="form-group margin-bottom-30">
+                              <input type="text" class="form-control form-text bizbo-textfield" ng-model="marketvalue2" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Market Value2">
+                            </div>
+                            <div class="form-group margin-bottom-30">
+                              <input type="text" class="form-control form-text bizbo-textfield" ng-model="marketvalue4" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Market Value4">
+                            </div>
+                            <div class="form-group margin-bottom-30">
+                                <input type="text" class="form-control form-text bizbo-textfield" ng-model="yaxislabel" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Y Axis Label">
+                              </div>
+  
+                          </div>
+
+                          </div>
+                        </form>
+                      </div>
+
+
+                      <div class="form-group margin-bottom-30">
+                        <input type="text" class="form-control form-text bizbo-textfield" ng-model="comments" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Comments">
+                      </div>
+      
+
+                      <div class="form-group margin-bottom-30">
+                        <input type="text" class="form-control form-text bizbo-textfield" ng-model="recommendations" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Recommendations">
+                      </div>
+
+            </div>
+
+            <div class="row business-info-footer-button-row">
+                <button ng-click="generateReport()" class="button-normal">GENERATE REPORT</button>
+            </div>
+
+                      <br/> <br/>
+                      <br/> <br/> 
+
+
+            <div style="text-align: right;" class="main">
+
+                        <input type="button" value="Export to PDF" ng-click="exportReport();" />
+
+                        <br/> <br/> 
+                        
+                        <h1>BizBo™ - Business Analytics Report</h1>
+
+                        <br/> <br/>
+                        <br/> <br/>
+                        
+                        <p id="intro">This is system generated report for BizBo™ customers calculated based on the inputs your provided, current market trends and intelligent predictions about the future.</p>
+                        <br/> <br/>
+                        <div style="width: 100%;height: 500px;" id="probability-chart"></div>
+                        <br/> <br/>
+                        <div style="width: 100%;height: 500px;" id="market-trends"></div>
+
+                        <br/> <br/> 
+                        
+                        <p id="note1">Thanks for interacting with BizBo™. We will help you improve your business. For any information/ suppport contact: support@bizbo.biz </p>
+                        <br/> <br/> 
+                        <p id="note2">Copyright 2018 - BizBo™ | All rights reserved</p>
+                        
+                        
+            </div>
+
+            </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,70 @@
+<div class="bizbo-home-background">
+
+
+  <section class="home-page">
+    <div class="flex-total-center">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="get-report-card card-box col-lg-12">
+                <div class="brand-logo-tag margin-bottom-30">
+                  <div class="brand-tagline">
+                    <h2>ABOUT BIZBO</h2>
+                  </div>
+                </div>
+                <div class="description-content margin-bottom-30">
+                  <p>Bizbo is an intelligent system which helps businesses. <br/>
+                    Its all about helping individuals analyze their business,
+                    build their goals, and achieve them. Necessary resources, data & service providers are here to help!<br/>
+                  </p>
+                </div>
+                <div style="cursor: pointer;" class="get-report-button">
+                  <a data-toggle="modal" data-target="#feedbackModal" class="">PROVIDE FEEDBACK</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div style="margin-top: 10%;" class="modal fade" id="feedbackModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Your feedback is important!</h4>
+        </div>
+        <div class="modal-body" style="min-height: 350px;">
+
+          <!-- <div style="margin-left: 40%;">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div> -->
+
+          <p>Please type in your suggestions.</p>
+          <div class="form-group margin-bottom-30">
+            <textarea style="width: 100%; height: 100px;" ng-model="mainCtrl.feedback" placeholder="Type your feedback here.."></textarea>
+
+            <input type="email" class="form-control form-text bizbo-textfield" ng-model="mainCtrl.email" data-toggle="tooltip" data-placement="top" title="Company Location" name="company-location" id="" placeholder="Email">
+
+            <div class="g-recaptcha" data-sitekey="6LekpFgUAAAAAHTYmmmMZerZQaIIxfOBdO0jq61X"></div>
+
+            <button style="margin-top: 20px; margin-left: 40%;" data-dismiss="modal" class="button-normal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
