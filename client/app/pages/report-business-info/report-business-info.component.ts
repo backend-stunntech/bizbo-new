@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router' 
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -23,7 +23,7 @@ export class ReportBusinessInfoComponent implements OnInit {
   email = new FormControl('', [Validators.required]);
 
   
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private router: Router) { }
 
 
     ngOnInit() {
@@ -42,14 +42,16 @@ export class ReportBusinessInfoComponent implements OnInit {
 
   submitReport(){
     if(this.reportForm.valid){
-          console.log("form Submitted Successfully");
+      console.log("Form Submitted Successfully");
+      console.log(this.reportForm.value);
+      this.reportForm.reset();
+      this.router.navigate(['report-business-info']);
 
     }
     else{
-      console.log("Failed");
+      console.log("Form invalid");
     }
   }
-
 
   }
 
